@@ -1,0 +1,30 @@
+.film-btns button {
+    width: 90%;
+    margin-bottom: 15px;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 15px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.yellow-btn {
+    background: yellow;
+}
+
+.red-btn {
+    background: red;
+    color: #fff
+}
+
+.add-btn {
+    background: linear-gradient(90deg, #ff5c4d, #eb469f 26.56%, #8341ef 75%, #3f68f9);
+    color: #fff;
+    font-size: 15px;
+    padding: 7px 20px;
+    border-radius: 15px;
+    border: none;
+    margin-bottom: 20px;
+    margin-left: 30px;
+    cursor: pointer;
+}

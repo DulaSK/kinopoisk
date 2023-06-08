@@ -1,0 +1,60 @@
+не работает админка 
+passport 12 строка 
+pags/router 26-28, 53-54
+
+console.log(Object.keys(req)) - возвращаеи массив с названиями ключей объекта (в данном случае объекта 'req')
+
+// date: Date.now()
+===========================================
+
+
+@import url(//db.onlinewebfonts.com/c/a1750a4dae8db954fdd595f313b3b34e?family=Graphik+Kinopoisk+LC+Web+SB);
+не работает- Добавить ссылку на фильм
+ругается на: <a class="addSerialsBtn" onclick="addFilmUrl()">Добавить ссылку на фильм</a>
+
+не работает- Добавить серий
+ругается:
+
+          <a class="addSerialsBtn" id="addSeriesBtn" onclick="addSeries()"
+            >Добавить серий</a
+          >
+
+
+станица detai.ejs 
+pугается на:
+ <% if(rates){
+     rates.forEatch(rate =>{ 
+%>
+    <div class="comment">
+        <p>
+            Автор:
+            <a href=""><%=rate.authorId.full_name %></a>
+        </p>
+        <div class="comment-stars">
+            <% 
+                for(let i = 0; i < 5; i++){ 
+                    if(i < rate.rate){ 
+            %>
+            <img class="active-star" src="/img/icons/star.svg" alt="" />
+            <% 
+                }else{ 
+            %>
+            <img src="/img/icons/star.svg" alt="" />
+            <%
+                } 
+                    } 
+            %>
+            </div>
+            <% 
+                if(rate.text.length > 0){ 
+            %>
+            <p>Комментарий <%=rate.text %></p>
+            <% 
+                } 
+            %>
+    </div>
+<%
+    })
+        }
+%>
+
