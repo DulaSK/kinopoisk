@@ -11,6 +11,7 @@ const Rate = require('../Rates/Rates')
     
 router.get('/', async(req, res) => {
     const options = {}
+    
     const genres = await Genres.findOne({key: req.query.genre})
     if(genres){
         options.genre = genres._id

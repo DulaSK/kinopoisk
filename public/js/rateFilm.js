@@ -1,5 +1,5 @@
 const stars = document.querySelectorAll('.comment-stars>img')
-console.log(stars)
+    console.log(stars)
 function rateFilm(rate){
     for(let i = 0; i < stars.length; i++){
         stars[i].classList.remove('active-star')
