@@ -1,5 +1,5 @@
-const stars = document.querySelectorAll('.comment-stars>img')
-    console.log(stars)
+const stars = document.querySelectorAll('#rate > img')
+console.log(stars)
 function rateFilm(rate){
     for(let i = 0; i < stars.length; i++){
         stars[i].classList.remove('active-star')
@@ -11,7 +11,7 @@ function rateFilm(rate){
 
 function sendRate(e){
     e.preventDefault()
-    const activeStar = document.querySelectorAll('.active-star')
+    const activeStar = document.querySelectorAll('#rate > .active-star')
     const comment_text= document.querySelector('#comment-text').value
     const author = document.querySelector('#comment_author').value
     const film = document.querySelector('#comment_film').value

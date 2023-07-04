@@ -87,7 +87,7 @@
                 <% if(user && user._id){ %>
                   <form class="add-comment-form" onSubmit="sendRate(event)">
                     <p>Оцените фильм</p>
-                    <div class="comment-stars">
+                    <div id="rate" class="comment-stars">
                       <img onclick="rateFilm(1)" src="/img/icons/star.svg" alt="" />
                       <img onclick="rateFilm(2)" src="/img/icons/star.svg" alt="" />
                       <img onclick="rateFilm(3)" src="/img/icons/star.svg" alt="" />
